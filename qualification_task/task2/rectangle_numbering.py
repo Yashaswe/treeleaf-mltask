@@ -44,7 +44,7 @@ for length, index in inner_contour_lengths[:4]:  # Only the first four contours
     
     number = line_numbers[index]
     cv2.putText(contour_image, str(number), tuple(contour[0][0]), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
-cv2.imwrite(f"task2_rectangles_ordered.png", contour_image)
+cv2.imwrite(f"rectangles_ordered.png", contour_image)
 cv2.imshow("Rectangles Ordered", contour_image)
 cv2.waitKey(0) 
 cv2.destroyAllWindows() 

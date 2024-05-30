@@ -75,7 +75,7 @@ def align_rectangle_image(image):
         aligned_rectangle = cv2.warpPerspective(image, M, (max_width, max_height))
         
         # Save the aligned rectangle image
-        cv2.imwrite(f"task2_aligned_rectangle_{i+1}.png", aligned_rectangle)
+        cv2.imwrite(f"aligned_rectangle_{i+1}.png", aligned_rectangle)
 
         # Optionally display the aligned rectangle
         cv2.imshow(f"Aligned Rectangle {i+1}", aligned_rectangle)
