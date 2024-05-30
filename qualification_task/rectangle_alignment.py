@@ -84,7 +84,6 @@ def align_rectangle_image(image):
     for rectangle in rectangles[:4]:  # Draw the largest four rectangles
         cv2.drawContours(image, [rectangle], -1, (0, 0, 255), 2)
 
-    cv2.imwrite(f"task2_rectangles_ordered.png", image)
     # Display the original image with rectangles drawn on it
     cv2.imshow("Original Image with Rectangles", image)
     cv2.waitKey(0)
